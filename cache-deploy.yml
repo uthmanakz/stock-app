@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: stock-cache
+  name: stock-cache
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: stock-cache
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: stock-cache
+    spec:
+      containers:
+      - image: 476114152571.dkr.ecr.eu-west-2.amazonaws.com/stockapp-cache:v1
+        name: stockapp-cache
+        resources: {}
+status: {}
