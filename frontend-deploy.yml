@@ -18,7 +18,7 @@ spec:
         app: frontend
     spec:
       containers:
-      - image: 476114152571.dkr.ecr.eu-west-2.amazonaws.com/stockapp-frontend:v1
+      - image: 476114152571.dkr.ecr.eu-west-2.amazonaws.com/stockapp-frontend-2:v2
         name: stockapp-frontend
         resources: {}
 status: {}
