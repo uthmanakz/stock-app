@@ -18,7 +18,10 @@ spec:
         app: backend
     spec:
       containers:
-      - image: 476114152571.dkr.ecr.eu-west-2.amazonaws.com/stockapp-backend:v1
+      - image: 476114152571.dkr.ecr.eu-west-2.amazonaws.com/stockapp-backend-2:v2
         name: stockapp-backend
-        resources: {}
-status: {}
+        resources:
+          requests:
+            cpu: "100m"
+          limits:
+            cpu: "500m"
