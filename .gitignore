@@ -1,0 +1,25 @@
+# Local .terraform directories
+.terraform/
+
+# Terraform plan files
+*.tfplan
+*.tfstate
+*.tfstate.backup
+
+# Crash logs
+crash.log
+
+# Sensitive files
+*.pem
+*.key
+*.crt
+*.env
+*.kubeconfig
+
+# Ignore override files
+terraform.tfvars
+terraform.tfvars.json
+override.tf
+override.tf.json
+
+#
